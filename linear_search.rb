@@ -7,6 +7,7 @@ array.each_with_index do |item,index|
     return index;
   end
 end
+return -1;
 end
 
 puts search(array,3)
