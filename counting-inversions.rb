@@ -1,5 +1,7 @@
 require "pry"
-array = [1,5,6,4,20]
+array = [6,5,4,3,2,1]
+# Sample with large array
+#ff  = File.readlines("integerArray.txt")
 
 def sort_and_count count,array
   if array.length == 1
@@ -17,13 +19,15 @@ def sort_and_count count,array
   inversion_count = 0 
   # Merge by second half size
   while i < x.length and j < y.length do 
-    if x[i] < y[j]
+    if x[i].to_i < y[j].to_i
       sorted3[k] = x[i] 
       i += 1
     else
       sorted3[k] = y[j]
       j += 1
+
       # Copy remaining inversion count
+      # Since x is sorted all after x > x[i] can be counted as inversions  
       inversion_count +=  x.length - i
     end
     k += 1

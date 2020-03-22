@@ -5,7 +5,7 @@ class String
 end
 
 def multiply(x,y)
-
+  
   if x.to_s.length <= 2 or y.to_s.length <= 2
     return x.to_i * y.to_i
   end
@@ -14,9 +14,7 @@ def multiply(x,y)
 
   a,b = x.to_s.halves
 
-
   c,d = y.to_s.halves
-
 
   ac = multiply(a, c)
   bd = multiply(b, d)
