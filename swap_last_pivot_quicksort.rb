@@ -1,7 +1,7 @@
 
 # Pivot should be = [2,1,3,6,7,4,5,8]
 array  = File.readlines("qs_numbers.txt")
-  #[1,6,8,10,7,5,2,9,4,3]
+  
 
 $comparisons = 0
 def quickSort(array,low,high)
