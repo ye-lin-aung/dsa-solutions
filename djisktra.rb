@@ -42,11 +42,6 @@ while @searched.length != @q.length
   end
   @searched << w_select
 
-
-
-
-
-
   
 end
 
