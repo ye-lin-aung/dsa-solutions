@@ -8,14 +8,11 @@ def search(an_array,item)
   while first  <= last
     i = (first + last) / 2
     if an_array[i] == item
-      puts "Found"
-      puts "#{item}"
       return
       # 6 <  5
       # first = 6
     elsif an_array[i] < item  
          first = i + 1
-
     elsif an_array[i] > item 
          last = i - 1
     else

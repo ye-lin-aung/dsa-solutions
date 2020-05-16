@@ -40,9 +40,7 @@ while @searched.length != @q.length
       end
     end
   end
-  @searched << w_select
-
-  
+  @searched << w_select  
 end
 
 
